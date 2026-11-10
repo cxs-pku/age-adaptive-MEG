@@ -1,0 +1,39 @@
+{
+  "seed": 20261024,
+  "sigma_fT": 250.0,
+  "q_nAm": 10.0,
+  "cell_mm": 10.0,
+  "ages_months": [
+    12,
+    48,
+    120,
+    216
+  ],
+  "K": [
+    25,
+    41,
+    61
+  ],
+  "layouts": [
+    "age-adaptive",
+    "adult-helmet"
+  ],
+  "trials_per_ecd_configuration": 100,
+  "trials_per_robust_configuration": 100,
+  "candidate_grid_points": 921,
+  "candidate_grid_construction": "center plus 20 equal-area radial rings with 4j azimuth samples per ring, plus 80-point cap boundary",
+  "candidate_grid_rings": 20,
+  "cap_rho_max": 1.52,
+  "nested_sensor_cap_rho_max": 1.28,
+  "nested_sensor_sequence": "center plus van der Corput base-2 radii and golden-angle azimuth; K arrays are prefixes",
+  "correlated_noise_rho": 0.35,
+  "correlated_noise_length_mm": 35.0,
+  "registration_position_rms_mm": 3.0,
+  "registration_orientation_rms_deg": 3.0,
+  "fit": "profiled two-component tangential ECD GLS residual over independent dense candidate grid",
+  "noise_definition": "250 fT per-channel marginal RMS for each simulated sample; correlated covariance whitened with known Cholesky factor",
+  "source_sampling": "uniform area in Lambert disk, equivalent to uniform spherical-cap area",
+  "source_orientation": "uniform azimuth in the local tangential plane; dipole magnitude 10 nA m",
+  "paired_random_streams": "SeedSequence([master_seed, age_months, trial, stream_id]); source, noise, position, and orientation streams are shared across comparable configurations",
+  "elapsed_seconds": 156.64344920000002
+}

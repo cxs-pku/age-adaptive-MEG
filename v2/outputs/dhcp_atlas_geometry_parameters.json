@@ -1,0 +1,17 @@
+{
+  "dataset": "dHCP symmetric week-40 cortical atlas",
+  "source_url": "https://biomedic.doc.ic.ac.uk/brain-development/downloads/dhcpSym_template.zip",
+  "seed": 20261026,
+  "source_count": 400,
+  "normalization": "per-channel RMS across selected atlas source patterns",
+  "shells": {
+    "age-adaptive": 58.4,
+    "adult-helmet": 91.5
+  },
+  "cortex_radius_mm": 42.23508541392904,
+  "atlas_vertices": 64984,
+  "cap_vertices": 37506,
+  "median_radius_mm": 37.015428188346945,
+  "scale": 1.1410130175726383,
+  "interpretation": "neonatal MRI-derived atlas geometry sensitivity check; no BEM, raw MEG, empirical noise, or localization accuracy"
+}
